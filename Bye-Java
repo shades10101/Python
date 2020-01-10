@@ -1,0 +1,6 @@
+# run this python script that edits the java exceptions list.
+# It opens the file and adds a subnet - I used 192.168.1.x ... as thats the network im working with atm 
+f= open(r"C:\Users\sahmed\AppData\LocalLow\Sun\Java\Deployment\security\exception.sites","a+")
+for x in range (1,254):
+  f.write ("http://192.168.1." + str(x) + "\n")
+f.close()
